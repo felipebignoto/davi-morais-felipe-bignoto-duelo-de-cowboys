@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cowboy Duelos - Jogo 2D Canvas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Container do jogo -->
+    <div id="gameContainer">
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        
+        <!-- HUD (Interface do usuário) -->
+        <div id="hud">
+            <div>💰 Pontos: <span id="score">0</span></div>
+            <div>❤️ Vida: <span id="health">100</span></div>
+            <div>🔫 Balas: <span id="ammo">∞</span></div>
+        </div>
+        
+        <!-- Tela de Game Over -->
+        <div id="gameOver">
+            <h2>Fim do Duelo!</h2>
+            <p id="finalScore"></p>
+            <button onclick="restartGame()">Jogar Novamente</button>
+        </div>
+    </div>
+
+    <!-- Controles do jogo -->
+    <div id="controls">
+        <h3>🎮 Controles</h3>
+        <p>⬅️ A / Seta Esquerda: Mover para esquerda</p>
+        <p>➡️ D / Seta Direita: Mover para direita</p>
+        <p>🔫 ESPAÇO: Atirar</p>
+        <p>🎯 Objetivo: Derrote os bandidos e sobreviva o máximo possível!</p>
+    </div>
+
+    <!-- Script principal do jogo -->
+    <script src="main.js"></script>
+</body>
+</html>
